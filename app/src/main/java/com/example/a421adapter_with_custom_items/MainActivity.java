@@ -27,9 +27,16 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.listView);
 
         ArrayList<Product> products = new ArrayList<Product>();
-        products.add(new Product(1,2, "Танк"));
-        products.add(new Product(10,20, "Автомобиль"));
-        products.add(new Product(15,30, "Мотоцикл"));
+        products.add(new Product(1,2, "Танк", R.drawable.tank));
+        products.add(new Product(10,20, "Автомобильчик", R.drawable.am200));
+        products.add(new Product(15,30, "Мотоцикл", R.drawable.moto200));
+        products.add(new Product(1,25, "Самолёт", R.drawable.flight200));
+        products.add(new Product(90,40, "Вертолёт", R.drawable.helicopter200));
+        products.add(new Product(3500,1, "Чувиха", R.drawable.girl01));
+        products.add(new Product(5000,1, "Другая Чувиха", R.drawable.blondinka));
+        products.add(new Product(1500,1, "Чувиха не дорого", R.drawable.a3));
+        products.add(new Product(6750,1, "Дорогая чувиха", R.drawable.a4));
+        products.add(new Product(19990,0, "Всем чувихам Чувиха", R.drawable.girl02));
 
         BasketAdapter adapter = new BasketAdapter(this, products);
 

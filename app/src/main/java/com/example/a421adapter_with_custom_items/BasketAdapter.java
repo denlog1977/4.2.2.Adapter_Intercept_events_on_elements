@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -58,12 +59,16 @@ public class BasketAdapter extends BaseAdapter {
         Product product = getProduct(position);
 
         ((TextView) (view.findViewById(R.id.name))).setText(product.name);
-        ((TextView) (view.findViewById(R.id.price))).setText(Integer.toString(product.price));
-        ((TextView) (view.findViewById(R.id.quantity))).setText(Integer.toString(product.quantity));
-//        ImageView imageView = (ImageView) view.findViewById(R.id.image);
-//        (ImageView) .getDrawable(product.image);
+        ((TextView) (view.findViewById(R.id.price))).setText("Цена: " + Integer.toString(product.price) + ",00 руб.");
+        ((TextView) (view.findViewById(R.id.quantity))).setText("Количество: " + Integer.toString(product.quantity) + " шт.");
+        ImageView imageView = (ImageView) view.findViewById(R.id.image);
+        imageView.setImageResource(product.image);
 //        CheckBox chekBox = (CheckBox) view.findViewById(R.id.selected);
 //        chekBox.setOnCheckedChangeListener(checkedChangeListener);
+        ((TextView) (view.findViewById(R.id.name2))).setText("Дополнительное описание товара (" + product.name + ")");
+        ((TextView) (view.findViewById(R.id.price2))).setText("Цена скидкой: " + Integer.toString(product.price));
+        ((TextView) (view.findViewById(R.id.quantity2))).setText("Допустимое количество по акции: " + Integer.toString(product.quantity));
+
 
         return view;
     }
