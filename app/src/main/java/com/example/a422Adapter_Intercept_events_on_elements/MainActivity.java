@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -39,28 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
-//        Button buttonRemove = (Button) findViewById(R.id.buttonRemove);
-//        buttonRemove.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(MainActivity.this
-//                        ,"- Удаление - позиции № " + Integer.toString(currentPosition)
-//                        ,Toast.LENGTH_LONG)
-//                        .show();
-//
-//                //products.remove(currentPosition);
-//                //adapter.notifyDataSetChanged();
-//
-//            }
-//        });
-//
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                currentPosition =  position;
-//                adapter.notifyDataSetChanged();
-                Toast.makeText(getApplicationContext(), "currentPosition = " + Integer.toString(currentPosition) + " --- productsSize --- " + Integer.toString(products.size()), Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
     }
 
