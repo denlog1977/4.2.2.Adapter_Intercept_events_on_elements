@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.listView);
 
         ArrayList<Product> products = new ArrayList<Product>();
-        products.add(new Product(1,2, "Танк", R.drawable.tank));
+        products.add(new Product(1,2, "Танчик", R.drawable.tank));
         products.add(new Product(10,20, "Автомобильчик", R.drawable.am200));
-        products.add(new Product(15,30, "Мотоцикл", R.drawable.moto200));
-        products.add(new Product(1,25, "Самолёт", R.drawable.flight200));
-        products.add(new Product(90,40, "Вертолёт", R.drawable.helicopter200));
+        products.add(new Product(15,30, "Мотик", R.drawable.moto200));
+        products.add(new Product(1,25, "Самолётик", R.drawable.flight200));
+        products.add(new Product(90,40, "Вертолётик", R.drawable.helicopter200));
         products.add(new Product(3500,1, "Чувиха", R.drawable.girl01));
         products.add(new Product(5000,1, "Другая Чувиха", R.drawable.blondinka));
         products.add(new Product(1500,1, "Чувиха не дорого", R.drawable.a3));

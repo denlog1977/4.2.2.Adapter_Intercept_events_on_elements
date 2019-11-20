@@ -59,7 +59,7 @@ public class BasketAdapter extends BaseAdapter {
         Product product = getProduct(position);
 
         ((TextView) (view.findViewById(R.id.name))).setText(product.name);
-        ((TextView) (view.findViewById(R.id.price))).setText("Цена: " + Integer.toString(product.price) + ",00 руб.");
+        ((TextView) (view.findViewById(R.id.price))).setText(Integer.toString(product.price) + ",00 руб.");
         ((TextView) (view.findViewById(R.id.quantity))).setText("Количество: " + Integer.toString(product.quantity) + " шт.");
         ImageView imageView = (ImageView) view.findViewById(R.id.image);
         imageView.setImageResource(product.image);
