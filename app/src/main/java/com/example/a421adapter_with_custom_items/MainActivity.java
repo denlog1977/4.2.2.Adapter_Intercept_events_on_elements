@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
         products.add(new Product(1,25, "Самолётик", R.drawable.flight200));
         products.add(new Product(90,40, "Вертолётик", R.drawable.helicopter200));
         products.add(new Product(3500,1, "Чувиха", R.drawable.girl01));
-        products.add(new Product(5000,1, "Другая Чувиха", R.drawable.blondinka));
+        products.add(new Product(5000,1, "Другая Чувиха", R.drawable.blondinka200));
         products.add(new Product(1500,1, "Чувиха не дорого", R.drawable.a3));
         products.add(new Product(6750,1, "Дорогая чувиха", R.drawable.a4));
-        products.add(new Product(19990,0, "Всем чувихам Чувиха", R.drawable.girl02));
+        products.add(new Product(19990,0, "Всем чувихам Чувиха", R.drawable.chuvixa200));
 
         BasketAdapter adapter = new BasketAdapter(this, products);
 
