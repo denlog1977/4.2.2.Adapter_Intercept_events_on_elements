@@ -1,14 +1,11 @@
-package com.example.a421adapter_with_custom_items;
+package com.example.a422Adapter_Intercept_events_on_elements;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;

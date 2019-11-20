@@ -1,15 +1,11 @@
-package com.example.a421adapter_with_custom_items;
-
+package com.example.a422Adapter_Intercept_events_on_elements;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.os.Bundle;
-
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
 
 public class MainActivity extends AppCompatActivity {
 

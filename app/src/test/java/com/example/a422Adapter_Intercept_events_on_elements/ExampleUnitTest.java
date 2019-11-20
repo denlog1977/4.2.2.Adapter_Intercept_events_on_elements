@@ -1,4 +1,4 @@
-package com.example.a421adapter_with_custom_items;
+package com.example.a422Adapter_Intercept_events_on_elements;
 
 import org.junit.Test;
 
