@@ -13,6 +13,7 @@ public class Product {
         this.name = name;
         this.image = image;
     }
+
     public Product(int price, int quantity, String name) {
         this.price = price;
         this.quantity = quantity;

@@ -47,20 +47,25 @@ public class BasketAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
         View view = convertView;
-//        if (view == null)
-//        {
-//            view = layoutInflater.inflate(R.layout.basket_item, false);
-//        }
+
+        if (view == null)
+        {
+            view = layoutInflater.inflate(R.layout.basket_item, parent,false);
+        }
+
         Product product = getProduct(position);
+
         ((TextView) (view.findViewById(R.id.name))).setText(product.name);
-        ((TextView) (view.findViewById(R.id.price))).setText(product.price);
-        ((TextView) (view.findViewById(R.id.quantity))).setText(product.quantity);
+        ((TextView) (view.findViewById(R.id.price))).setText(Integer.toString(product.price));
+        ((TextView) (view.findViewById(R.id.quantity))).setText(Integer.toString(product.quantity));
 //        ImageView imageView = (ImageView) view.findViewById(R.id.image);
 //        (ImageView) .getDrawable(product.image);
 //        CheckBox chekBox = (CheckBox) view.findViewById(R.id.selected);
 //        chekBox.setOnCheckedChangeListener(checkedChangeListener);
-        return null;
+
+        return view;
     }
 
 //    OnCheckedChangeListener checkedChangeListener = new OnCheckedChangeListener() {
