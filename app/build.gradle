@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.a421adapter_with_custom_items"
+        applicationId "com.example.a422Adapter_Intercept_events_on_elements"
         minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
