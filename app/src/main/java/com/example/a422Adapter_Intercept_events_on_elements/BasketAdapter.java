@@ -63,7 +63,7 @@ public class BasketAdapter extends BaseAdapter {
 //        CheckBox chekBox = (CheckBox) view.findViewById(R.id.selected);
 //        chekBox.setOnCheckedChangeListener(checkedChangeListener);
         ((TextView) (view.findViewById(R.id.name2))).setText("Дополнительное описание товара (" + product.name + ")");
-        ((TextView) (view.findViewById(R.id.price2))).setText("Цена скидкой: " + Integer.toString(product.price));
+        ((TextView) (view.findViewById(R.id.price2))).setText("Цена со скидкой: " + Integer.toString(product.price));
         ((TextView) (view.findViewById(R.id.quantity2))).setText("Допустимое количество по акции: " + Integer.toString(product.quantity));
 
 
